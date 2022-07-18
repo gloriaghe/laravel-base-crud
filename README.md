@@ -25,8 +25,23 @@ composer require doctrine/dbal:2.*
 
 7)php artisan make:model nomefilecontroller
 
-8) quando il seeser è pronto lo metto nel file Databaseseeder nella cartella database scommentando la riga di esempio
+8) quando il seeder è pronto lo metto nel file Databaseseeder nella cartella database scommentando la riga di esempio
 
 9) php artisan db:seed --class=TrainsTableSeeder (salva i seeder di questo singolo file)
 
 10) php artisan db:seed (se ho salvato i file nel file Databaseseeder posso mandare solo questo comando per salvare i dati)
+
+
+MODEL e Controller:
+
+1) php artisan make:model Comic (al singolare con maiuscola)
+
+2) php artisan make:controller ComicsController (creo un normale controller da gestire io)
+
+Per creare i controller Curd:
+3) php artisan make:controller --resource ComicsController (mi crea un nuovo controller con le funzioni CURD)
+
+4) in web.php metto la route : Route::resource('/comics', 'ComicsController');
+
+5) php artisan route:list (mi da tutte le rotte create)
+
