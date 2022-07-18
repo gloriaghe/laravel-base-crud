@@ -17,19 +17,32 @@ class ComicsController extends Controller
 
     public function create()
     {
-        //
+        return view('admin.comics.create');
+
     }
 
 
     public function store(Request $request)
     {
-        //
+        $formData = $request->all();
+
+
+        $comic = new Comic();
+        $comic->title = $formData['title'];
+        $comic->description = $formData['description'];
+        $comic->thumb = $formData['thumb'];
+        $comic->price = $formData['price'];
+        $comic->series = $formData['series'];
+        $comic->sale_date = $formData['sale_date'];
+        $comic->type = $formData['type'];
+
+        $comic->save();
     }
 
 
-    public function show($id)
+    public function show(Comic $comic)
     {
-        //
+        return view('admin.comics.show', compact('comic'));
     }
 
 
