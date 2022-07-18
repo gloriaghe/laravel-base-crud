@@ -11,12 +11,12 @@
 <body>
     <div id="app">
 
-        @include ('admin.partials.header')
+        @include ('front.partials.header')
 
         @yield('mainContent')
 
 
-        @include ('admin.partials.footer')
+        @include ('front.partials.footer')
     </div>
 
 </body>
