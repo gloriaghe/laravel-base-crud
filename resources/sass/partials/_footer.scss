@@ -6,7 +6,7 @@ $small: 1100px;
 }
 
 #sectionFooter {
-    background-image: url(/images/footer-bg.jpg);
+    // background-image: url(/images/footer-bg.jpg);
     background-size: cover;
     @include my-flex;
     justify-content: space-evenly;

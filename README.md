@@ -12,6 +12,8 @@ Tabella:
 
 1) sistemare .env con password e node database creato su phpMyAdmin
 
+FAR RIPARTIRE SERVER
+
 2) php artisan make:migration create_comics_table (nome tabella plurale) ->crea migrazione tabella
 
 3) php artisan migrate ->invia colonne tabella create nei file migrate
@@ -45,4 +47,4 @@ Per creare i controller Curd:
 
 5) php artisan route:list (mi da tutte le rotte create)
 
-6)
+6) compilare file ComicsController
