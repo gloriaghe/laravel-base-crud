@@ -9,6 +9,15 @@
     <title>Admin Area</title>
 </head>
 <body>
-    @yield('mainContent')
+    <div id="app">
+
+        @include ('admin.partials.header')
+
+        @yield('mainContent')
+
+
+        @include ('admin.partials.footer')
+    </div>
+
 </body>
 </html>

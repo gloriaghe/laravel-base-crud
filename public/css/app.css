@@ -377,6 +377,7 @@ header section ul li a:hover {
 }
 
 #app #jumbo {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
   background-size: cover;
   height: 400px;
 }
